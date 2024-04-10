@@ -71,7 +71,7 @@ app.get('/musicians', async (req, res, next) => {
                 model: Band,
                 where: {
                     name: {
-                        [Op.like]: '%'+ bandName +'%'
+                        [Op.like]: '%'+ bandName +'%'//Bonus Step 7
                     }
                 }
             } 
